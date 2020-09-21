@@ -1,0 +1,28 @@
+﻿<Application x:Class="Social_Blade_Dashboard.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Social_Blade_Dashboard"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="lvc:LineSeries">
+                <Setter Property="StrokeThickness" Value="3"></Setter>
+                <Setter Property="Stroke" Value="White"></Setter>
+                <Setter Property="Fill" Value="#4EFFFFFF"></Setter>
+                <Setter Property="PointGeometrySize" Value="0"></Setter>
+                <Setter Property="LineSmoothness" Value="0"></Setter>
+            </Style>
+            <Style TargetType="lvc:Axis">
+                <Setter Property="ShowLabels" Value="False"></Setter>
+                <Setter Property="IsEnabled" Value="False"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
